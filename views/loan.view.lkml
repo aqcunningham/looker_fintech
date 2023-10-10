@@ -113,4 +113,10 @@ view: loan {
     type: count
     drill_fields: [loan_id, customer.customer_id, loan_with_region.count]
   }
+
+  measure: outstanding_count {
+    type: count
+    filters: [loan_status: "-Fully Paid"]
+    drill_fields: [loan_id, customer.customer_id, loan_with_region.count]
+  }
 }
