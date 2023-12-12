@@ -63,7 +63,7 @@ view: loan {
 
   dimension: installment {
     type: number
-    description: Fixed payment due each month"
+    description: "Fixed payment due each month"
     sql: ${TABLE}.installment ;;
   }
 
